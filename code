@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Científica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #004d40;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #00695c;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 2rem auto;
+        }
+        .section {
+            padding: 2rem 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #00796b;
+        }
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        button {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página Científica</h1>
+        <p>Divulgación del conocimiento científico</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#conclusiones">Conclusiones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="section">
+            <h2>Inicio</h2>
+            <p>Bienvenidos a esta página científica dedicada a la difusión de investigaciones relevantes en el campo de la ciencia y la tecnología.</p>
+        </section>
+
+        <section id="introduccion" class="section">
+            <h2>Introducción</h2>
+            <p>En esta sección se introduce el objetivo general de la investigación, el contexto y la relevancia del estudio.</p>
+        </section>
+
+        <section id="metodologia" class="section">
+            <h2>Metodología</h2>
+            <p>Explicamos los métodos y técnicas utilizadas para la recolección y el análisis de los datos.</p>
+            <button onclick="mostrarAlerta()">Ver más detalles</button>
+        </section>
+
+        <section id="resultados" class="section">
+            <h2>Resultados</h2>
+            <p>Presentamos los hallazgos más importantes, representados en gráficos, tablas y estadísticas relevantes.</p>
+        </section>
+
+        <section id="conclusiones" class="section">
+            <h2>Conclusiones</h2>
+            <p>Esta sección resume los resultados principales e incluye recomendaciones para futuras investigaciones.</p>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Si deseas comunicarte con nosotros, completa el formulario a continuación:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Página Científica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Aquí se pueden añadir más detalles sobre la metodología.");
+        }
+    </script>
+</body>
+</html>
